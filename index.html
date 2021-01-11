@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Assets/style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+
+    <div class="container parent">
+      <div class="row" id="schedule-item">
+        <div class="col-2 " style="border: 1px solid black;">
+         <p class="p-3" id="schedule-item-time">8 AM</p>
+        </div>
+        <div class="col-8" id="task-background" style="position: relative;">
+          <p class="saved-task" style="position: absolute; top: 10px; left: 10px;"></p>
+          <input id="inputTask" onkeyup="getInput(this)" style="position: absolute; top: 10px; left: 10px;" type="text" placeholder="Enter Task">
+        </div>
+        <div class="col-2">
+          <button class="saveBtn" id="save-btn">
+            <i class="fa fa-archive"></i>
+          </button>
+        </div>
+      </div>
+      <div class="row" id="schedule-item">
+        <div class="col-2 " style="border: 1px solid black;">
+         <p class="p-3" id="schedule-item-time">9 AM</p>
+        </div>
+        <div class="col-8" id="task-background" style="position: relative;">
+          <p class="saved-task" style="position: absolute; top: 10px; left: 10px;"></p>
+          <input id="inputTask" onkeyup="getInput(this)" style="position: absolute; top: 10px; left: 10px;" type="text" placeholder="Enter Task">
+        </div>
+        <div class="col-2">
+          <button class="saveBtn" id="save-btn">
+            <i class="fa fa-archive"></i>
+          </button>
+        </div>
+      </div>
+      <div class="row" id="schedule-item">
+        <div class="col-2 " style="border: 1px solid black;">
+         <p class="p-3" id="schedule-item-time">10 AM</p>
+        </div>
+        <div class="col-8" id="task-background" style="position: relative;">
+          <p class="saved-task" style="position: absolute; top: 10px; left: 10px;"></p>
+          <input id="inputTask" onkeyup="getInput(this)" style="position: absolute; top: 10px; left: 10px;" type="text" placeholder="Enter Task">
+        </div>
+        <div class="col-2">
+          <button class="saveBtn" id="save-btn">
+            <i class="fa fa-archive"></i>
+          </button>
+        </div>
+      </div>
+      <div class="row" id="schedule-item">
+        <div class="col-2 " style="border: 1px solid black;">
+         <p class="p-3" id="schedule-item-time">11 AM</p>
+        </div>
+        <div class="col-8" id="task-background" style="position: relative;">
+          <p class="saved-task" style="position: absolute; top: 10px; left: 10px;"></p>
+          <input id="inputTask" onkeyup="getInput(this)" style="position: absolute; top: 10px; left: 10px;" type="text" placeholder="Enter Task">
+        </div>
+        <div class="col-2">
+          <button class="saveBtn" id="save-btn">
+            <i class="fa fa-archive"></i>
+          </button>
+        </div>
+      </div>
+      <div class="row" id="schedule-item">
+        <div class="col-2 " style="border: 1px solid black;">
+         <p class="p-3" id="schedule-item-time">12 PM</p>
+        </div>
+        <div class="col-8" id="task-background" style="position: relative;">
+          <p class="saved-task" style="position: absolute; top: 10px; left: 10px;"></p>
+          <input id="inputTask" onkeyup="getInput(this)" style="position: absolute; top: 10px; left: 10px;" type="text" placeholder="Enter Task">
+        </div>
+        <div class="col-2">
+          <button class="saveBtn" id="save-btn">
+            <i class="fa fa-archive"></i>
+          </button>
+        </div>
+      </div>
+      <div class="row" id="schedule-item">
+        <div class="col-2 " style="border: 1px solid black;">
+         <p class="p-3" id="schedule-item-time">1 PM</p>
+        </div>
+        <div class="col-8" id="task-background" style="position: relative;">
+          <p class="saved-task" style="position: absolute; top: 10px; left: 10px;"></p>
+          <input id="inputTask" onkeyup="getInput(this)" style="position: absolute; top: 10px; left: 10px;" type="text" placeholder="Enter Task">
+        </div>
+        <div class="col-2">
+          <button class="saveBtn" id="save-btn">
+            <i class="fa fa-archive"></i>
+          </button>
+        </div>
+      </div>
+      <div class="row" id="schedule-item">
+        <div class="col-2 " style="border: 1px solid black;">
+         <p class="p-3" id="schedule-item-time">2 PM</p>
+        </div>
+        <div class="col-8" id="task-background" style="position: relative;">
+          <p class="saved-task" style="position: absolute; top: 10px; left: 10px;"></p>
+          <input id="inputTask" onkeyup="getInput(this)" style="position: absolute; top: 10px; left: 10px;" type="text" placeholder="Enter Task">
+        </div>
+        <div class="col-2">
+          <button class="saveBtn" id="save-btn">
+            <i class="fa fa-archive"></i>
+          </button>
+        </div>
+      </div>
+      <div class="row" id="schedule-item">
+        <div class="col-2 " style="border: 1px solid black;">
+         <p class="p-3" id="schedule-item-time">3 PM</p>
+        </div>
+        <div class="col-8" id="task-background" style="position: relative;">
+          <p class="saved-task" style="position: absolute; top: 10px; left: 10px;"></p>
+          <input id="inputTask" onkeyup="getInput(this)" style="position: absolute; top: 10px; left: 10px;" type="text" placeholder="Enter Task">
+        </div>
+        <div class="col-2">
+          <button class="saveBtn" id="save-btn">
+            <i class="fa fa-archive"></i>
+          </button>
+        </div>
+      </div>
+      <div class="row" id="schedule-item">
+        <div class="col-2" style="border: 1px solid black;">
+         <p class="p-3" id="schedule-item-time">4 PM</p>
+        </div>
+        <div class="col-8" id="task-background" style="position: relative;">
+          <p class="saved-task" style="position: absolute; top: 10px; left: 10px;"></p>
+          <input id="inputTask" onkeyup="getInput(this)" style="position: absolute; top: 10px; left: 10px;" type="text" placeholder="Enter Task">
+        </div>
+        <div class="col-2">
+          <button class="saveBtn" id="save-btn">
+            <i class="fa fa-archive"></i>
+          </button>
+        </div>
+      </div>
+      <div class="row" id="schedule-item">
+        <div class="col-2" style="border: 1px solid black;">
+         <p class="p-3" id="schedule-item-time">5 PM</p>
+        </div>
+        <div class="col-8" id="task-background" style="position: relative;">
+          <p class="saved-task" style="position: absolute; top: 10px; left: 10px;"></p>
+          <input id="inputTask" onkeyup="getInput(this)" style="position: absolute; top: 10px; left: 10px;" type="text" placeholder="Enter Task">
+        </div>
+        <div class="col-2">
+          <button class="saveBtn" id="save-btn">
+            <i class="fa fa-archive"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src=".//Assets/script.js"></script>
+  </body>
+</html>
