@@ -8,6 +8,8 @@ Built with
   3) Javascript
   4) jQuery
   5) Bootstrap
+  
+ Launched Website URL : https://pepermz.github.io/scheduler/
 
 The purpose for this week's challange was to build a week planner in which the user can log in different tasks, delete and edit them with no complications. 
 
